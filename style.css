@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(#fff, #fce4ec);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(#f8bbd0, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 28px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.ayat, .hadis {
+  font-style: italic;
+  max-width: 800px;
+  margin: auto;
+}
+
+.mempelai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.heart {
+  font-size: 40px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.countdown #timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#timer div {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 80px;
+}
+
+#timer span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f06292;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.fade-in {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.zoom-in {
+  animation: zoom 2s;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+.slide-left {
+  animation: slideLeft 2s;
+}
+
+.slide-right {
+  animation: slideRight 2s;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
